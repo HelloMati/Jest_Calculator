@@ -153,7 +153,7 @@ describe('modulus', () => {
     expect(actual).toBe(expected);
   });
 
-  test('can find the modulus of two negative numbers. Negative, captain', () => {
+  test('can find the modulus of two negative numbers. Negative, Captain', () => {
     expected = -4;
     actual = modulus(-10, -6);
     expect(actual).toBe(expected);
@@ -180,6 +180,12 @@ describe('even', () => {
     actual = even(1);
     expect(actual).toBe(expected);
   });
+
+  test('"Odd or even. There is no balance in between, like the Force, you must choose. I can find if a big positive number is not even', () => {
+    expected = false;
+    actual = even(151);
+    expect(actual).toBe(false);
+  }); 
 });
 
 
@@ -191,10 +197,16 @@ describe('odd', () => {
     expect(actual).toBe(expected);
   });
 
-  test('Even the most improbable of situations is likely to occur eventually. Here were can find out if a small positive number is in fact not odd', () => {
+  test('Search your feelings, you know it to be true, you can find if a small positive number is odd',() => {
+    expected = true;
+    actual = odd(5);
+    expect(actual).toBe(true);
+  });
+
+  test('Space, the final frontier. No, not space, the last test: can find out if a small positive number is in fact not odd', () => {
     expected = false;
     actual = odd(2);
     expect(actual).toBe(expected);
   });
 });
-"Space, the final frontier. Well, not as amazing as space, but you've reached the end of my task submission. Yay!" 
+"Although this task is not as grand as the vast expanse of the cosmos, completing it is a journey worthy of a Starfleet captain. Qapla'!" 
