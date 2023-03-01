@@ -141,7 +141,7 @@ test('I cannot change the laws of physics! Thus, I cannot divide zero', () => {
 
 describe('modulus', () => {
 
-  test("I'm a doctor, not a mathematician, but even I know can find the modulus of two small positive numbers. Again McCoy? Yes again.", () => {
+  test("I'm a doctor, not a mathematician, but even I know I can find the modulus of two small positive numbers.  Again McCoy?  Yes again.", () => {
     expected = 4;
     actual = modulus(12, 8);
     expect(actual).toBe(expected);
@@ -169,7 +169,7 @@ describe('modulus', () => {
 
 describe('even', () => {
 
-  test('To boldly go where I can find out if a small positive number is even', () => {
+  test('To boldly go where I can find if a small positive number is even', () => {
     expected = true;
     actual = even(4);
     expect(actual).toBe(expected);
